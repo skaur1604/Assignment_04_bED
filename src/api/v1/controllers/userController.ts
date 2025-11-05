@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import logger from '../utils/logger';
-import admin from 'src/config/firebaseAdmin';
+import admin from '../../../config/firebaseAdmin';
+
 
 export const getUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
